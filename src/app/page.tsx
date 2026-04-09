@@ -248,7 +248,7 @@ export default function Home() {
     return (
       <>
         <Navbar />
-        <div className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-b from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center p-4">
           <Card className="w-full max-w-md">
             <CardHeader className="text-center">
               <div className="mx-auto mb-4 w-16 h-16 bg-pink-100 dark:bg-pink-900 rounded-full flex items-center justify-center">
@@ -304,7 +304,7 @@ export default function Home() {
     return (
       <>
         <Navbar />
-        <div className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-b from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center p-4">
           <Card className="w-full max-w-md">
             <CardHeader className="text-center">
               <div className={`mx-auto mb-4 w-16 h-16 rounded-full flex items-center justify-center ${isWon ? 'bg-pink-100 dark:bg-pink-900' : 'bg-gray-100 dark:bg-gray-800'}`}>
@@ -357,7 +357,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 flex flex-col">
+      <div className="min-h-screen bg-gradient-to-b from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex flex-col">
         {/* 顶部状态栏 */}
         <div className="sticky top-0 z-10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b p-4">
           <div className="max-w-2xl mx-auto">
