@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
+import { GlowingEffect } from '@/components/ui/glowing-effect';
 import { Navbar } from '@/components/Navbar';
 import { Volume2, RotateCcw, Heart, HeartCrack, MessageCircle, Send, Loader2, BookOpen } from 'lucide-react';
 import type { Scenario, Message, GameState } from '@/types/game';
@@ -264,17 +265,21 @@ export default function Home() {
                 选择一个场景开始练习
               </p>
               {SCENARIOS.map(scenario => (
-                <Button
+                <GlowingEffect 
                   key={scenario.id}
-                  variant="outline"
-                  className="w-full h-auto py-4 flex flex-col items-start gap-2"
-                  onClick={() => startGame(scenario)}
+                  className="w-full"
                 >
-                  <span className="font-semibold">{scenario.title}</span>
-                  <span className="text-xs text-muted-foreground text-left">
-                    {scenario.description}
-                  </span>
-                </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full h-auto py-4 flex flex-col items-start gap-2 relative z-10 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm"
+                    onClick={() => startGame(scenario)}
+                  >
+                    <span className="font-semibold">{scenario.title}</span>
+                    <span className="text-xs text-muted-foreground text-left">
+                      {scenario.description}
+                    </span>
+                  </Button>
+                </GlowingEffect>
               ))}
               
               {/* 恋爱攻略入口 */}
